@@ -1,0 +1,14 @@
+[
+        {
+            id: 1,
+            artist: 'Grateful Dead',
+            venue: 'Berkly Amphatheater',
+            performance: '01/20/1967'
+          },
+          {
+              id: 2,
+              artist: 'Grateful Dead',
+              venue: 'Frost Amphatheater',
+              performance: 'Unknown'
+          }
+      ];
