@@ -8,9 +8,9 @@
           },
           {
               "id": 2,
-              "artist": 'Grateful Dead',
-              "venue": 'Frost Amphatheater',
-              "performance": 'Unknown'
+              "artist": "Grateful Dead",
+              "venue": "Frost Amphatheater",
+              "performance": "Unknown"
           }
       ]
 }
