@@ -1,4 +1,5 @@
-[
+{
+        tapes: [
         {
             id: 1,
             artist: 'Grateful Dead',
@@ -11,4 +12,5 @@
               venue: 'Frost Amphatheater',
               performance: 'Unknown'
           }
-      ];
+      ]
+}
