@@ -12,5 +12,9 @@
               "venue": "Frost Amphatheater",
               "performance": "Unknown"
           }
-      ]
+      ],
+        "songs":[
+                {"name": "Blues For Alla" },
+                {"name": "I Need A Miracle" }
+                ]
 }
