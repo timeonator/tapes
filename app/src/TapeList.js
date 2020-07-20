@@ -19,10 +19,8 @@ export default class TapeList extends React.Component {
         let verbose = this.props.verbose
         console.log(tl)
         return (
-            <ul>
-                <li>
-            { tl.map( (element) => <Tape tape={element} />) } 
-                </li>
+            <ul>       
+            { tl.map( (element) => <li key={element.id}><Tape tape={element} verbose={true}/></li>) } 
             </ul>
         );
 
