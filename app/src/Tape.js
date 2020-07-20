@@ -1,11 +1,18 @@
-import React from 'react'
+import React, {Component} from 'react'
 
 
 
-export default class Tape extends React.Component {
+export default class Tape extends Component {
+
     constructor(props){
         super(props)
-        this.state = {}
+        this.state = {'tapeUrl' : 'https://www.kozco.com/tech/piano2-CoolEdit.mp3'}
+        // This binding is necessary to make `this` work in the callback
+        this.playTape = this.playTape.bind(this);
+    }
+
+    playTape() {
+        console.log("playTape", this.props)
     }
     
     render(){
@@ -13,7 +20,7 @@ export default class Tape extends React.Component {
         let verbose = this.props.verbose
         console.log(tp)
         return (
-            <div className="tape-container">
+            <div className="tape-container" onClick={this.playTape} >
                 {verbose && <p>ID: {tp.id}</p>}
                 <p>{tp.artist} at {tp.venue}</p>
                 <p>{tp.performance}</p>

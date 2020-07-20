@@ -3,6 +3,7 @@ import TapeList from './TapeList';
 import logo from './logo.svg';
 import './App.css';
 
+
 var data = {
     "tapes": [
     {
@@ -10,7 +11,7 @@ var data = {
         "artist": "Grateful Dead",
         "venue": "Berkly Amphatheater",
         "performance": "01/20/1967",
-        "url" : "localhost:/song one",
+        "url" : "https://www.kozco.com/tech/LRMonoPhase4.mp3",
         "songs": [
             {"name": "Blues For Alla" },
             {"name": "I Need A Miracle" }
@@ -21,7 +22,7 @@ var data = {
           "artist": "Grateful Dead",
           "venue": "Frost Amphatheater",
           "performance": "Unknown",
-          "url" : ""
+          "url" : "https://www.kozco.com/tech/piano2-CoolEdit.mp3"
       }
   ]
 
