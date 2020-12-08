@@ -7,7 +7,7 @@ export default class Tape extends Component {
     constructor(props){
         super(props)
         this.state = {'tapeUrl' : 'https://www.kozco.com/tech/piano2-CoolEdit.mp3'}
-          
+
         this.playTape = this.playTape.bind(this);      // bind method this.playTape.
     }
 
@@ -21,10 +21,16 @@ export default class Tape extends Component {
         console.log(tp)
         return (
             <div className="tape-container" onClick={this.playTape} >
-                {verbose && <p>ID: {tp.id}</p>}
-                <p>{tp.artist} at {tp.venue}</p>
-                <p>{tp.performance}</p>
-                {verbose && <p>URL: {tp.url}</p>}
+                <div className="row">
+                    <div className="col-1">
+                        {verbose && <p>#{tp.id}</p>}
+                    </div>
+                    <div className="col-4">
+                        {tp.artist} at {tp.venue}
+                        <p>{tp.performance}</p>   
+                    </div>
+                    <div className="col-7">{tp.url}</div>
+                </div>
             </div>
         )
     }
