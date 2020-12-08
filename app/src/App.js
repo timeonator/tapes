@@ -30,8 +30,6 @@ var data = {
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-      </header> */}
       <TapeList tapes={data.tapes} verbose={true}/>
     </div>
   );

@@ -7,12 +7,12 @@ export default class Tape extends Component {
     constructor(props){
         super(props)
         this.state = {'tapeUrl' : 'https://www.kozco.com/tech/piano2-CoolEdit.mp3'}
-        // This binding is necessary to make `this` work in the callback
-        this.playTape = this.playTape.bind(this);
+          
+        this.playTape = this.playTape.bind(this);      // bind method this.playTape.
     }
 
     playTape() {
-        console.log("playTape", this.props)
+        // console.log("playTape", this.props)
     }
     
     render(){
